@@ -29,7 +29,7 @@ function AddSubscriptionPopup() {
   // Fetch popup list
   const fetchPopups = async page => {
     try {
-      const res = await axios.get("http://13.51.235.130:8003/get-subscriptions", {
+      const res = await axios.get("http://52.206.223.237:8003/get-subscriptions", {
         headers: { Authorization: `Bearer ${token}` },
       })
       const allPopups = res.data.data.filter(p => p.popupImg) // only popups with image
@@ -69,7 +69,7 @@ function AddSubscriptionPopup() {
 
     try {
       const res = await axios.post(
-        "http://13.51.235.130:8003/add-seubscriptionpopup",
+        "http://52.206.223.237:8003/add-seubscriptionpopup",
         dataArray,
         { headers: { Authorization: `Bearer ${token}` } }
       )
@@ -112,7 +112,7 @@ function AddSubscriptionPopup() {
 
     try {
       await axios.delete(
-        `http://13.51.235.130:8003/delete-subscriptionpopup/${id}`,
+        `http://52.206.223.237:8003/delete-subscriptionpopup/${id}`,
         { headers: { Authorization: `Bearer ${token}` } }
       )
       toast("Popup deleted successfully")
@@ -233,7 +233,7 @@ function AddSubscriptionPopup() {
                         <td>{(currentPage - 1) * pageSize + i + 1}</td>
                         <td>
                           <img
-                            src={`http://13.51.235.130:8003/${p.popupImg.replace("\\", "/")}`}
+                            src={`http://52.206.223.237:8003/${p.popupImg.replace("\\", "/")}`}
                             alt="Popup"
                             height="50"
                           />
