@@ -9,7 +9,6 @@
 /coverage
 
 # production
-/build
 
 # misc
 .DS_Store
@@ -23,7 +22,5 @@ yarn-debug.log*
 yarn-error.log*
 
 .idea
-package.json
-package-lock.json
 .eslintcache
 debug.log
