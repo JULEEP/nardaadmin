@@ -69,7 +69,7 @@ function AddAds() {
     }
 
     axios
-      .post('http://52.206.223.237:8003/admin/createAds', dataArray, {
+      .post('http://98.95.127.183:8003/admin/createAds', dataArray, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then(

@@ -147,7 +147,7 @@ const ListOfAds = () => {
     }
 
     axios
-      .post('http://52.206.223.237:8003/admin/createAds', dataArray, {
+      .post('http://98.95.127.183:8003/admin/createAds', dataArray, {
         headers: { 
           Authorization: `Bearer ${token}`,
           'Content-Type': 'multipart/form-data'
@@ -191,7 +191,7 @@ const ListOfAds = () => {
     }
 
     axios
-      .post('http://52.206.223.237:8003/admin/ads/update', dataArray, {
+      .post('http://98.95.127.183:8003/admin/ads/update', dataArray, {
         headers: { 
           Authorization: `Bearer ${token}`,
           'Content-Type': 'multipart/form-data'
@@ -221,7 +221,7 @@ const ListOfAds = () => {
     const adId = data._id
     
     axios
-      .delete(`http://52.206.223.237:8003/admin/ads/delete/${adId}`, {
+      .delete(`http://98.95.127.183:8003/admin/ads/delete/${adId}`, {
         headers: { 
           Authorization: `Bearer ${token}`,
           'Content-Type': 'application/json'
@@ -273,7 +273,7 @@ const ListOfAds = () => {
     var token = datas
     axios
       .post(
-        'http://52.206.223.237:8003/admin/ads/getall',
+        'http://98.95.127.183:8003/admin/ads/getall',
         {},
         {
           headers: { Authorization: `Bearer ${token}` },

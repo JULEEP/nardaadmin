@@ -94,7 +94,7 @@ const PopUp = () => {
       dataArray.append("image", Files1[i])
     }
     axios
-      .post("http://52.206.223.237:8003/admin/ads/adsImageUpdate", dataArray, {
+      .post("http://98.95.127.183:8003/admin/ads/adsImageUpdate", dataArray, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then(
@@ -123,7 +123,7 @@ const PopUp = () => {
     const token = datas;
 
     axios
-      .get("http://52.206.223.237:8003/admin/getAllAdsImages", {
+      .get("http://98.95.127.183:8003/admin/getAllAdsImages", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then(res => {
@@ -155,7 +155,7 @@ const PopUp = () => {
 
     // Using DELETE method and sending ID in URL params
     axios
-      .delete(`http://52.206.223.237:8003/admin/deletepopup/${planToDelete._id}`, {
+      .delete(`http://98.95.127.183:8003/admin/deletepopup/${planToDelete._id}`, {
         headers: { 
           Authorization: `Bearer ${token}`,
         },
@@ -240,7 +240,7 @@ const PopUp = () => {
     }
 
     axios
-      .post("http://52.206.223.237:8003/admin/createadsimg", dataArray, {
+      .post("http://98.95.127.183:8003/admin/createadsimg", dataArray, {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "multipart/form-data",

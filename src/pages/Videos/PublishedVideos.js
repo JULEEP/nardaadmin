@@ -144,7 +144,7 @@ function Complaintbox() {
     var videoId = data._id
     
     // Direct API integration - Replace with your actual backend URL
-    const DELETE_API_URL = "http://52.206.223.237:8003/admin/deletevideo/"
+    const DELETE_API_URL = "http://98.95.127.183:8003/admin/deletevideo/"
     
     axios
       .delete(
